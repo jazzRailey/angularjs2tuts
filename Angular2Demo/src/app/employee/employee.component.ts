@@ -7,6 +7,7 @@
     
 })
 export class EmployeeComponent {
+    columnSpan: number = 2;
     firstName: string = 'Henry';
     lastName: string = 'Andes';
     gender: string = 'Male';
@@ -67,5 +68,19 @@ export class EmployeeComponent {
     - Important points
         HTML atrributes and the DOM properties are different thisgs
         Angular binding works with properties and events, and not attributes
+
+
+    Lesson 11
+    What is Attribute Binding?
+    - Interpolation and Property binding deal with binding Component class properties to HTML element properties and NOT ATTRIBUTES
+    - But not all HTML element attributes have corresponding properties. For example, colspan attribute does not have a corresponding property.
+    - In situations like this we want to be able to bind to HTML element attributes
+    - Hence, Angular provided Attribute binding
+
+    Attribute Binding Examples
+        <th [attr.colspan] = "columnSpan">
+        <th attr.colspan = "{{columnSpan}}">
+
+
         
 */

@@ -74,6 +74,7 @@
     <Content Include="src\app\employee\employee.component.css" />
     <Content Include="src\app\employee\employee.component.html" />
     <Content Include="src\app\employee\employee.component.js" />
+    <Content Include="src\MyNotes.txt" />
     <Content Include="src\tsconfig.json" />
     <Content Include="tslint.json" />
     <Content Include="src\app\employee\employee.component.js.map" />

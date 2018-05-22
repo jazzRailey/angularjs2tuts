@@ -13,11 +13,11 @@
             <td>Last Name</td>
             <td>{{lastName}}</td>
         </tr>
-        <tr>
+        <tr *ngIf='showDetails'>
             <td>Gender</td>
             <td>{{gender}}</td>
         </tr>
-        <tr>
+        <tr *ngIf='showDetails'>
             <td>Age</td>
             <td>{{age}}</td>
         </tr>
@@ -26,3 +26,13 @@
 
 
 </table>
+<br/>
+
+<button (click)="toggleDetails()">
+    {{showDetails ? 'Hide' : 'Show'}}  Details
+</button>
+<h1>Event Binding</h1>
+
+<br/>
+
+<button (click)="onClick()">Click Me</button>

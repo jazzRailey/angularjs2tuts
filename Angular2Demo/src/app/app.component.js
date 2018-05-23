@@ -18,7 +18,7 @@ AppComponent = __decorate([
         //template: `<h1>Hello {{name}}</h1>`,
         //templateUrl : 'app/app.component.html'
         // it's best practice you will only use templateurl if your html tags has more than 3 lines
-        template: "<div>\n                <h1>{{pageHeader}}</h1>\n                <my-employee></my-employee>\n            </div>\n            "
+        template: "<div>\n                <h1>{{pageHeader}}</h1>\n                <my-employee></my-employee>\n                <list-employee></list-employee>\n            </div>\n            "
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;

@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
   template: `<div>
                 <h1>{{pageHeader}}</h1>
                 <my-employee></my-employee>
+                <list-employee></list-employee>
             </div>
             `
 })

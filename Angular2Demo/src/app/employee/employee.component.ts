@@ -13,7 +13,7 @@ export class EmployeeComponent {
     gender: string = 'Male';
     age: number = 20; 
     showDetails: boolean = false;
-
+    name: string = "Tom";
     onClick(): void {
         console.log('Button Clicked');
     }

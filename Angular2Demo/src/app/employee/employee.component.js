@@ -14,6 +14,7 @@ var EmployeeComponent = (function () {
         this.gender = 'Male';
         this.age = 20;
         this.showDetails = false;
+        this.name = "Tom";
     }
     EmployeeComponent.prototype.onClick = function () {
         console.log('Button Clicked');

@@ -123,5 +123,48 @@
         always remember [] is for property binding
                         () is for event binding
 
+
+		toggleDetails(): void {
+			this.showDetails = !this.showDetails;
+		}
+
+		// tasks is by default it will hide the Gender and Age row then when you clicked the the button it will show those rows.
+
+		templateurl file
+
+		use *ngIf for conditional purposes
+
+		 <tr *ngIf='showDetails'>
+            <td>Gender</td>
+            <td>{{gender}}</td>
+        </tr>
+        <tr *ngIf='showDetails'>
+            <td>Age</td>
+            <td>{{age}}</td>
+        </tr>
+
+
+		<button (click)="toggleDetails()">
+			{{showDetails ? 'Hide' : 'Show'}}  Details
+		</button>
+
+
+		Lesson 15 Two Way Data Bindings
+
+		To make it work, you need to import the FormsModule in app.module.ts
+
+		import { FormsModule } from '@angular/forms';
+
+		after you have add it you need to add the FormsModule in the 
+
+		@NgModule({
+		imports:      [ BrowserModule, FormsModule ],
+
+		Then use the ngModel directive
+
+			<input [(ngModel)]='name' /> <br/>
+			You Entered {{name}}
+		
+		*name variable is declared in the export class EmployeeComponent (based on my example)
         
 */
